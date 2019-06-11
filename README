@@ -1,7 +1,15 @@
 Music Genre Classification on FMA
 
 Download the fma_small.zip from https://github.com/mdeff/fma. 
+
 Run code in these notebooks:
 1. load_fma_dataset: Loads fma_dataset and explores it.
 2. Plot_Spectograms: Plots spectograms for the 8 different genres
 3. convert_to_npz: Loads the raw audio, converts each file to a spectogram and pickles the results to make it easy for training models.
+
+Build Model:
+1. baseline_model_fma: This model uses the metadata in tracks.csv to load MFCC features and builds a SVC classifier.
+2. CRNN_model: This notebook uses the compressed spectograms to build a CRNN model in Keras
+
+All codes are from https://github.com/priya-dwivedi/Music_Genre_Classification
+
