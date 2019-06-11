@@ -1,5 +1,7 @@
 Music Genre Classification on FMA
 
 Download the fma_small.zip from https://github.com/mdeff/fma. 
-Run code these notebooks:
-
+Run code in these notebooks:
+1. load_fma_dataset: Loads fma_dataset and explores it.
+2. Plot_Spectograms: Plots spectograms for the 8 different genres
+3. convert_to_npz: Loads the raw audio, converts each file to a spectogram and pickles the results to make it easy for training models.
